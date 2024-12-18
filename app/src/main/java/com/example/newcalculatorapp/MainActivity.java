@@ -22,11 +22,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         b1=(Button) findViewById(R.id.add);
+        b2=(Button) findViewById(R.id.sub);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent ob=new Intent(getApplicationContext(), AdditionActivity.class);
                 startActivity(ob);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ob1=new Intent(getApplicationContext(), SubstractionActivity.class);
+                startActivity(ob1);
             }
         });
 
